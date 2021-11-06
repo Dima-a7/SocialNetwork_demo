@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  sotialnetwork:
+    image: ${DOCKER_REGISTRY-}sotialnetwork
+    build:
+      context: .
+      dockerfile: SotialNetwork/Dockerfile

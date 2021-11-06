@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SotialNetwork", "SotialNetwork\SotialNetwork.csproj", "{0BBD4914-EBBC-4A6F-85BD-B2DA3B2B7500}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{D218ED5F-EE76-4962-A3C8-6FFCC1C91964}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BBD4914-EBBC-4A6F-85BD-B2DA3B2B7500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BBD4914-EBBC-4A6F-85BD-B2DA3B2B7500}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BBD4914-EBBC-4A6F-85BD-B2DA3B2B7500}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BBD4914-EBBC-4A6F-85BD-B2DA3B2B7500}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D218ED5F-EE76-4962-A3C8-6FFCC1C91964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D218ED5F-EE76-4962-A3C8-6FFCC1C91964}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D218ED5F-EE76-4962-A3C8-6FFCC1C91964}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D218ED5F-EE76-4962-A3C8-6FFCC1C91964}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E03FB05F-4C03-4976-8ED0-2B65BF4DD00D}
+	EndGlobalSection
+EndGlobal
