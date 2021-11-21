@@ -17,9 +17,12 @@ namespace SotialNetwork
 {
     public class Startup
     {
+        public IWebHostEnvironment Env { get; set; }
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            Env = webHostEnvironment;
         }
 
         public IConfiguration Configuration { get; }
@@ -27,6 +30,18 @@ namespace SotialNetwork
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            IMvcBuilder builder = services.AddRazorPages();
+
+#if DEBUG
+            if (Env.IsDevelopment())
+            {
+                builder.AddRazorRuntimeCompilation();
+            }
+#endif
+
+            // code omitted for brevity
+
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
